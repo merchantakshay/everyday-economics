@@ -1,0 +1,29 @@
+/* Shared visual roles for Thesis Stack and Economic Intuition. */
+:root {
+  --paper: #f3f2eb;
+  --card: #faf9f3;
+  --ink: #10130f;
+  --dark: #141713;
+  --muted: #696d64;
+  --line: #d3d4cc;
+  --accent: #d6ff5f;
+  --accent-ink: #64742b;
+  --on-dark: #faf9f3;
+  --on-dark-muted: #aeb6a5;
+  --dark-hover: #20251d;
+  --dark-line: #41483a;
+  --acid: var(--accent);
+  --lime: var(--accent);
+  --olive: var(--accent-ink);
+  --font-ui: Arial, Helvetica, sans-serif;
+  --font-editorial: Georgia, 'Times New Roman', serif;
+}
+body { background: var(--paper); color: var(--ink); font-family: var(--font-ui); }
+a, button { transition: color .18s, background-color .18s, border-color .18s, transform .18s; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--accent-ink); outline-offset: 4px;
+}
+.site-header { background: var(--paper); border-bottom-color: var(--line); }
+.site-header nav a { color: var(--ink); text-underline-offset: 5px; }
+.site-header nav a:hover { color: var(--accent-ink); opacity: 1; text-decoration: underline; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
